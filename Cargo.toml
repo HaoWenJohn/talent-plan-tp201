@@ -1,5 +1,5 @@
 [package]
-name = "kvs"
+name = "Kvs"
 version = "0.1.0"
 authors = ["zhenghaowen <705680835@qq.com>"]
 edition = "2018"
@@ -13,8 +13,12 @@ structopt = "0.3.22"
 failure = "0.1.8"
 serde = "1.0.126"
 serde_json = "1.0.64"
+sled = "0.34.7"
+
 [dev-dependencies]
-assert_cmd = "0.11.0"
+assert_cmd = "0.11"
+criterion = "0.3"
 predicates = "1.0.0"
+rand = "0.6.5"
 tempfile = "3.0.7"
 walkdir = "2.2.7"

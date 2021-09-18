@@ -1,5 +1,6 @@
 mod database;
 mod utils;
-
-pub use database::Database;
+mod sled;
+pub use self::database::Database;
+pub use self::sled::SledKvsEngine;
 

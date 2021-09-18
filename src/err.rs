@@ -12,7 +12,11 @@ pub enum Error{
     #[fail(display="internal err")]
     InternalError,
     #[fail(display="key not found")]
-    KeyNotFoundError
+    KeyNotFoundError,
+    #[fail(display="can not connect to specified ip addr")]
+    ConnectFailedError,
+    #[fail(display="specified engine not match to data file")]
+    InvalidEngineError,
 }
 impl From<std::io::Error> for Error{
     fn from(_: std::io::Error) -> Self {
